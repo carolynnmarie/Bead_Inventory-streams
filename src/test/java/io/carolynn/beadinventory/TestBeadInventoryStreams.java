@@ -16,11 +16,11 @@ import static io.carolynn.beadinventory.Quality.*;
 
 public class TestBeadInventoryStreams {
 
-    private Bead bead1 = new Bead(ADVENTURINE, "light green", 6, ROUND, null,null,GOOD,
+    private Bead bead1 = new Bead(ADVENTURINE, "light green", 6, ROUND, "","",GOOD,
             30, 1);
-    private Bead bead2 = new Bead(BLUE_ADVENTURINE, "dark blue", 4, ROUND, null,null,GOOD,
+    private Bead bead2 = new Bead(BLUE_ADVENTURINE, "dark blue", 4, ROUND, "","",GOOD,
             20, 2);
-    private Bead bead3 = new Bead(GLASS, "light blue", 0, SEED_SMALL,null,null,GOOD,
+    private Bead bead3 = new Bead(GLASS, "light blue", 0, SEED_SMALL,"","",GOOD,
             150, 3);
     private ArrayList<Bead> beads = new ArrayList<>(Arrays.asList(bead1, bead2, bead3));
     private BeadInventoryStreams inventory = new BeadInventoryStreams(beads);
@@ -60,6 +60,16 @@ public class TestBeadInventoryStreams {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testGetQuantityById(){
+        int expected = 150;
+        int actual = inventory.getQuantityById(3);
+        Assert.assertEquals(expected, actual);
+    }
 
+    @Test
+    public void testGetBeadById(){
+        System.out.println(inventory.getBeadById(3));
+    }
 
 }

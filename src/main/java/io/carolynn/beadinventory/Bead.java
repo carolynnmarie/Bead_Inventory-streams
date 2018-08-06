@@ -101,4 +101,11 @@ public class Bead {
     public void setId(long id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Id: " + id + ", Material: " + material.getMaterial() + ", Color: " + color + ", Size: " + sizeCM +
+                ", Shape: " + shape.getShape() + ", Description: " + shapeOther + description + ", Quality: "
+                + quality.getQuality() + ", Quantity: " + quantity;
+    }
 }

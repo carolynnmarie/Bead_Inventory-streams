@@ -24,10 +24,10 @@ public enum Shape {
     TOP_DRILLED_FACETED_TEARDROP("top drilled faceted teardrop"),
     CHIP("chip"),
     IRREGULAR("irregular"),
-    SEED_SMALL("small seed"),
-    SEED_E("E seed"),
-    SEED_E_LARGE("large E seed"),
-    SEED_TUBE("tube seed"),
+    SEED_SMALL("small seed bead"),
+    SEED_E("E seed bead"),
+    SEED_E_LARGE("large E seed bead"),
+    SEED_TUBE("tube seed bead"),
 
     OTHER("other");
 

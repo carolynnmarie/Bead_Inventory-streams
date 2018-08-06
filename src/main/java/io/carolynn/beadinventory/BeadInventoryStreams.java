@@ -38,7 +38,13 @@ public class BeadInventoryStreams {
         return quantityEach.stream().reduce(0, Integer::sum);
     }
 
+    public int getQuantityById(int id){
+        return beads.stream().filter(e-> e.getId()==id).mapToInt(Bead::getQuantity).sum();
+    }
 
+    public String getBeadById(int id){
+        return beads.stream().filter(e->e.getId() == id).map(e->e.toString()).collect(Collectors.joining("\n"));
+    }
 
 
 

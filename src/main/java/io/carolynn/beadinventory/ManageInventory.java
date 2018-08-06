@@ -118,4 +118,15 @@ public class ManageInventory {
         return x;
     }
 
+    public void changeQuantity(int id){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter new quantity");
+        int quantity = scanner.nextInt();
+        for(Bead bead: inventory){
+            if(bead.getId() == id){
+                bead.setQuantity(quantity);
+            }
+        }
+    }
+
 }
