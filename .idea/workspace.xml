@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a7be506-022c-409c-8507-fbb45c659b5e" name="Default" comment="" />
+    <list default="true" id="3a7be506-022c-409c-8507-fbb45c659b5e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Streams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/BeadInventoryStreams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestStreams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/People.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Streams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestStreams.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,58 +21,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Streams.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Streams.java">
+      <file leaf-file-name="BeadInventoryStreams.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/BeadInventoryStreams.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+            <state relative-caret-position="600">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#575#576#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#733#734#0" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#958#959#0" expanded="true" />
-                <element signature="e#1021#1022#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="People.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/People.java">
+      <file leaf-file-name="TestBeadInventoryStreams.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/carolynn/beadinventory/TestBeadInventoryStreams.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="119">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestStreams.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestStreams.java">
+      <file leaf-file-name="ManageInventory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/ManageInventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+            <state relative-caret-position="50">
+              <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestManageInventory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/carolynn/beadinventory/TestManageInventory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bead.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Bead.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+              <folding>
+                <element signature="e#1650#1651#0" expanded="true" />
+                <element signature="e#1696#1697#0" expanded="true" />
+                <element signature="e#1890#1891#0" expanded="true" />
+                <element signature="e#1921#1922#0" expanded="true" />
+                <element signature="e#2100#2101#0" expanded="true" />
+                <element signature="e#2134#2135#0" expanded="true" />
+                <element signature="e#2162#2163#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,17 +99,37 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/People.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Streams.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestStreams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MaterialCategories.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Material.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/MaterialCategories.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Quality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Shape.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestBeadInventory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestBeadInventoryStreams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Material.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/BeadInventoryStreams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/BeadInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Bead.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/carolynn/beadinventory/TestBeadInventoryStreams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/carolynn/beadinventory/TestManageInventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/BeadFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/ManageInventory.java" />
       </list>
     </option>
   </component>
@@ -112,10 +156,13 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="68" />
-    <option name="y" value="59" />
+    <option name="x" value="57" />
+    <option name="y" value="23" />
     <option name="width" value="1317" />
     <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -133,11 +180,6 @@
             <path>
               <item name="streams" type="b2602c69:ProjectViewProjectNode" />
               <item name="streams" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="streams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="streams" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -157,6 +199,14 @@
               <item name="streams" type="b2602c69:ProjectViewProjectNode" />
               <item name="streams" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beadinventory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="streams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="streams" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -165,6 +215,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="streams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="streams" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beadinventory" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -179,10 +237,15 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.carolynn.beadinventory" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -196,17 +259,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestStreams.testGetAverage">
+  <component name="RunManager" selected="JUnit.TestManageInventory.testPrintMaterials">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="TestStreams.testFirstNameList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBeadInventoryStreams.testGetCurrentColorCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="streams" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.carolynn.beadinventory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestStreams" />
-      <option name="METHOD_NAME" value="testFirstNameList" />
+      <option name="PACKAGE_NAME" value="io.carolynn.beadinventory" />
+      <option name="MAIN_CLASS_NAME" value="io.carolynn.beadinventory.TestBeadInventoryStreams" />
+      <option name="METHOD_NAME" value="testGetCurrentColorCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -217,13 +286,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestStreams.testGetAverage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBeadInventoryStreams.testGetCurrentColorList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="streams" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.carolynn.beadinventory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestStreams" />
-      <option name="METHOD_NAME" value="testGetAverage" />
+      <option name="PACKAGE_NAME" value="io.carolynn.beadinventory" />
+      <option name="MAIN_CLASS_NAME" value="io.carolynn.beadinventory.TestBeadInventoryStreams" />
+      <option name="METHOD_NAME" value="testGetCurrentColorList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -234,13 +309,65 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestStreams.testReduce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBeadInventoryStreams.testGetCurrentShapeList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="streams" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.carolynn.beadinventory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestStreams" />
-      <option name="METHOD_NAME" value="testReduce" />
+      <option name="PACKAGE_NAME" value="io.carolynn.beadinventory" />
+      <option name="MAIN_CLASS_NAME" value="io.carolynn.beadinventory.TestBeadInventoryStreams" />
+      <option name="METHOD_NAME" value="testGetCurrentShapeList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestBeadInventoryStreams.testGetTotalBeadCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="streams" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.carolynn.beadinventory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.carolynn.beadinventory" />
+      <option name="MAIN_CLASS_NAME" value="io.carolynn.beadinventory.TestBeadInventoryStreams" />
+      <option name="METHOD_NAME" value="testGetTotalBeadCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestManageInventory.testPrintMaterials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="streams" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.carolynn.beadinventory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.carolynn.beadinventory" />
+      <option name="MAIN_CLASS_NAME" value="io.carolynn.beadinventory.TestManageInventory" />
+      <option name="METHOD_NAME" value="testPrintMaterials" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -290,15 +417,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestStreams.testReduce" />
-      <item itemvalue="JUnit.TestStreams.testFirstNameList" />
-      <item itemvalue="JUnit.TestStreams.testGetAverage" />
+      <item itemvalue="JUnit.TestBeadInventoryStreams.testGetTotalBeadCount" />
+      <item itemvalue="JUnit.TestBeadInventoryStreams.testGetCurrentColorList" />
+      <item itemvalue="JUnit.TestBeadInventoryStreams.testGetCurrentColorCount" />
+      <item itemvalue="JUnit.TestBeadInventoryStreams.testGetCurrentShapeList" />
+      <item itemvalue="JUnit.TestManageInventory.testPrintMaterials" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestStreams.testGetAverage" />
-        <item itemvalue="JUnit.TestStreams.testFirstNameList" />
-        <item itemvalue="JUnit.TestStreams.testReduce" />
+        <item itemvalue="JUnit.TestManageInventory.testPrintMaterials" />
+        <item itemvalue="JUnit.TestBeadInventoryStreams.testGetCurrentShapeList" />
+        <item itemvalue="JUnit.TestBeadInventoryStreams.testGetCurrentColorCount" />
+        <item itemvalue="JUnit.TestBeadInventoryStreams.testGetCurrentColorList" />
+        <item itemvalue="JUnit.TestBeadInventoryStreams.testGetTotalBeadCount" />
       </list>
     </recent_temporary>
   </component>
@@ -313,38 +444,48 @@
       <option name="presentableId" value="Default" />
       <updated>1533491573268</updated>
       <workItem from="1533491577162" duration="331000" />
-      <workItem from="1533492041570" duration="5307000" />
+      <workItem from="1533492041570" duration="5463000" />
+      <workItem from="1533573397871" duration="16874000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestStreams_testReduce - 2018.08.05 at 14h 12m 45s.xml">
-      <configuration name="TestStreams.testReduce" configurationId="JUnit" />
+    <history-entry file="TestBeadInventoryStreams_testGetCurrentColorList - 2018.08.06 at 15h 51m 18s.xml">
+      <configuration name="TestBeadInventoryStreams.testGetCurrentColorList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStreams_testReduce - 2018.08.05 at 14h 15m 14s.xml">
-      <configuration name="TestStreams.testReduce" configurationId="JUnit" />
+    <history-entry file="TestBeadInventoryStreams_testGetCurrentMaterialCount - 2018.08.06 at 15h 54m 36s.xml">
+      <configuration name="TestBeadInventoryStreams.testGetCurrentMaterialCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStreams_testFirstNameList - 2018.08.05 at 14h 43m 58s.xml">
-      <configuration name="TestStreams.testFirstNameList" configurationId="JUnit" />
+    <history-entry file="TestBeadInventoryStreams_testGetTotalBeadCount - 2018.08.06 at 15h 54m 39s.xml">
+      <configuration name="TestBeadInventoryStreams.testGetTotalBeadCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStreams_testFirstNameList - 2018.08.05 at 14h 44m 46s.xml">
-      <configuration name="TestStreams.testFirstNameList" configurationId="JUnit" />
+    <history-entry file="TestBeadInventoryStreams_testGetCurrentColorList - 2018.08.06 at 15h 55m 03s.xml">
+      <configuration name="TestBeadInventoryStreams.testGetCurrentColorList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStreams_testFirstNameList - 2018.08.05 at 15h 14m 36s.xml">
-      <configuration name="TestStreams.testFirstNameList" configurationId="JUnit" />
+    <history-entry file="TestBeadInventoryStreams_testGetCurrentColorCount - 2018.08.06 at 15h 56m 35s.xml">
+      <configuration name="TestBeadInventoryStreams.testGetCurrentColorCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStreams_testGetAverage - 2018.08.05 at 15h 35m 29s.xml">
-      <configuration name="TestStreams.testGetAverage" configurationId="JUnit" />
+    <history-entry file="TestBeadInventoryStreams_testGetCurrentShapeList - 2018.08.06 at 15h 58m 49s.xml">
+      <configuration name="TestBeadInventoryStreams.testGetCurrentShapeList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStreams_testGetAverage - 2018.08.05 at 15h 35m 51s.xml">
-      <configuration name="TestStreams.testGetAverage" configurationId="JUnit" />
+    <history-entry file="TestManageInventory_testPrintMaterials - 2018.08.06 at 16h 21m 09s.xml">
+      <configuration name="TestManageInventory.testPrintMaterials" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestManageInventory_testPrintMaterials - 2018.08.06 at 16h 24m 27s.xml">
+      <configuration name="TestManageInventory.testPrintMaterials" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestManageInventory_testPrintMaterials - 2018.08.06 at 16h 26m 18s.xml">
+      <configuration name="TestManageInventory.testPrintMaterials" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestManageInventory_testPrintMaterials - 2018.08.06 at 16h 35m 31s.xml">
+      <configuration name="TestManageInventory.testPrintMaterials" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5638000" />
+    <option name="totallyTimeSpent" value="22668000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="59" width="1317" height="777" extended-state="0" />
+    <frame x="57" y="23" width="1317" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -356,12 +497,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32941177" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32941177" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25333333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2572549" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -383,27 +524,61 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Streams.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/BeadInventoryStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/People.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestBeadInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/BeadInventoryStreams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -411,75 +586,151 @@
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/streams/Streams.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/streams/Streams.class" />
     <entry file="file://$PROJECT_DIR$/streams.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/People.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="23">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Streams.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/People.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Quality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestStreams.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestBeadInventory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+        <state relative-caret-position="15">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/MaterialCategories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding>
+            <element signature="e#954#955#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/carolynn/beadinventory/TestBeadInventoryStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/carolynn/beadinventory/TestManageInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/BeadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/BeadInventoryStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Bead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+          <folding>
+            <element signature="e#1650#1651#0" expanded="true" />
+            <element signature="e#1696#1697#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#1921#1922#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#2162#2163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/ManageInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -501,7 +752,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -549,7 +800,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: junit:junit:4.12</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
