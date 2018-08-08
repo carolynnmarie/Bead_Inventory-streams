@@ -1,4 +1,4 @@
-package io.carolynn.beadinventory;
+package io.carolynn.beadinventory.Beads;
 
 public enum Shape {
 

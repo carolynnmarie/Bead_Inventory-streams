@@ -2,6 +2,7 @@ package io.carolynn.beadinventory;
 
 
 
+import io.carolynn.beadinventory.Beads.Bead;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,9 +10,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static io.carolynn.beadinventory.Material.*;
-import static io.carolynn.beadinventory.Shape.*;
-import static io.carolynn.beadinventory.Quality.*;
+import static io.carolynn.beadinventory.Beads.Material.*;
+import static io.carolynn.beadinventory.Beads.Shape.*;
+import static io.carolynn.beadinventory.Beads.Quality.*;
 
 
 public class TestBeadInventoryStreams {
@@ -23,7 +24,7 @@ public class TestBeadInventoryStreams {
     private Bead bead3 = new Bead(GLASS, "light blue", 0, SEED_SMALL,"","",GOOD,
             150, 3);
     private ArrayList<Bead> beads = new ArrayList<>(Arrays.asList(bead1, bead2, bead3));
-    private BeadInventoryStreams inventory = new BeadInventoryStreams(beads);
+    private InventoryTracker inventory = new InventoryTracker(beads);
 
     @Test
     public void testGetTotalBeadCount(){

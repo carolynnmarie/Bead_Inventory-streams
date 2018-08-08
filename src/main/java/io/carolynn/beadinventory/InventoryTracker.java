@@ -1,19 +1,21 @@
 package io.carolynn.beadinventory;
 
+import io.carolynn.beadinventory.Beads.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class BeadInventoryStreams {
+public class InventoryTracker {
 
     ArrayList<Bead> beads;
 
 
-    public BeadInventoryStreams(){
+    public InventoryTracker(){
         this.beads = new ArrayList<>();
     }
 
-    public BeadInventoryStreams(ArrayList<Bead> beads){
+    public InventoryTracker(ArrayList<Bead> beads){
         this.beads = beads;
     }
 

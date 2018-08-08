@@ -1,26 +1,30 @@
 package io.carolynn.beadinventory;
 
+import io.carolynn.beadinventory.Beads.Bead;
+import io.carolynn.beadinventory.Beads.Material;
+import io.carolynn.beadinventory.Beads.Quality;
+import io.carolynn.beadinventory.Beads.Shape;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class ManageInventory {
+public class InventoryManager {
 
     ArrayList<Bead> inventory;
-    Material [] materials;
-    Shape [] shapes;
-    Quality [] quality;
+    Material[] materials;
+    Shape[] shapes;
+    Quality[] quality;
     Scanner input;
 
-    public ManageInventory(ArrayList<Bead> inventory){
+    public InventoryManager(ArrayList<Bead> inventory){
         this.inventory = inventory;
         this.materials = Material.values();
         this.shapes = Shape.values();
         this.quality = Quality.values();
         this.input = new Scanner(System.in);
-
     }
 
-    public ManageInventory(){
+    public InventoryManager(){
         this.inventory = new ArrayList<>();
         this.materials = Material.values();
         this.shapes = Shape.values();
@@ -53,7 +57,7 @@ public class ManageInventory {
         String description = getDescription();
         Quality quality = getQuality();
         int quantity = getQuantity();
-        int id = (int)inventory.get(inventory.size()-1).id +1;
+        int id = (int)inventory.get(inventory.size()-1).getId() +1;
         Bead bead = new Bead(material,color,size,shape,otherShape,description,quality,quantity,id);
         inventory.add(bead);
     }

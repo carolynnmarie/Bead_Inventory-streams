@@ -1,6 +1,6 @@
-package io.carolynn.beadinventory;
+package io.carolynn.beadinventory.Beads;
 
-import static io.carolynn.beadinventory.MaterialCategories.*;
+import static io.carolynn.beadinventory.Beads.MaterialCategories.*;
 
 public enum Material {
 

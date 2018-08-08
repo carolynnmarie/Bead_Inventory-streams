@@ -10,8 +10,6 @@
         <module name="streams" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="10">
-      <module name="streams" target="10" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="10" />
   </component>
 </project>
