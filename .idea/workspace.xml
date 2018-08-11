@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a7be506-022c-409c-8507-fbb45c659b5e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Bead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Bead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/BeadInventoryStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/ManageInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Material.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/MaterialCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/MaterialCategories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Quality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Quality.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/carolynn/beadinventory/TestBeadInventoryStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/carolynn/beadinventory/TestBeadInventoryStreams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/carolynn/beadinventory/TestManageInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/carolynn/beadinventory/TestManageInventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streams.iml" beforeDir="false" afterPath="$PROJECT_DIR$/streams.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Bead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Bead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryTracker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,8 +21,11 @@
       <file leaf-file-name="InventoryTracker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="331">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,17 +33,17 @@
       <file leaf-file-name="Shape.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+            <state relative-caret-position="390">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InventoryManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InventoryManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="30">
+              <caret line="61" column="2" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -58,13 +51,25 @@
       <file leaf-file-name="Bead.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Bead.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-526">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="15">
+              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="12" />
               <folding>
-                <element signature="e#2075#2076#0" expanded="true" />
-                <element signature="e#2100#2101#0" expanded="true" />
-                <element signature="e#2134#2135#0" expanded="true" />
-                <element signature="e#2162#2163#0" expanded="true" />
+                <element signature="e#2101#2102#0" expanded="true" />
+                <element signature="e#2126#2127#0" expanded="true" />
+                <element signature="e#2160#2161#0" expanded="true" />
+                <element signature="e#2188#2189#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InventoryStorage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryStorage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Material.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="870">
-              <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+              <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -83,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/MaterialCategories.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -104,7 +109,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
+            <state relative-caret-position="630">
               <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
             </state>
           </provider>
@@ -147,10 +152,12 @@
         <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Shape.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/NaturalStoneBeads.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/NaturalStoneBead.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryTracker.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Material.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryTracker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Bead.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryStorage.java" />
       </list>
     </option>
   </component>
@@ -177,9 +184,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
-    <option name="y" value="85" />
-    <option name="width" value="1317" />
+    <option name="x" value="63" />
+    <option name="y" value="23" />
+    <option name="width" value="1377" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -190,7 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,6 +249,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -463,6 +470,10 @@
       <workItem from="1533573397871" duration="16874000" />
       <workItem from="1533590828909" duration="1678000" />
       <workItem from="1533746182880" duration="3341000" />
+      <workItem from="1533752418052" duration="745000" />
+      <workItem from="1533934604654" duration="597000" />
+      <workItem from="1534012217853" duration="826000" />
+      <workItem from="1534014732477" duration="2471000" />
     </task>
     <servers />
   </component>
@@ -499,10 +510,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27687000" />
+    <option name="totallyTimeSpent" value="32326000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="85" width="1317" height="777" extended-state="0" />
+    <frame x="63" y="23" width="1377" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -519,24 +530,24 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32941177" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26509804" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info id="Web" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32941177" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26067415" />
+      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32941177" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32941177" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,6 +562,115 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Bead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/MaterialCategories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Quality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding>
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Bead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/MaterialCategories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Quality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding>
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryTracker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -562,9 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -593,12 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="107" column="65" selection-start-line="107" selection-start-column="65" selection-end-line="107" selection-end-column="65" />
-          <folding>
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2100#2101#0" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -613,9 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,12 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
-          <folding>
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2100#2101#0" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,9 +764,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml" />
     <entry file="file://$PROJECT_DIR$/out/production/streams/Streams.class" />
     <entry file="file://$PROJECT_DIR$/streams.iml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -692,36 +792,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/NaturalStoneBead.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/SemiPreciousBead.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/NaturalStoneBead.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/SemiPreciousBead.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
+        <state relative-caret-position="630">
           <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
         </state>
       </provider>
@@ -740,41 +818,61 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/MaterialCategories.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Material.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
-          <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        <state relative-caret-position="390">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/Beads/Bead.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-526">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="15">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="12" />
           <folding>
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2100#2101#0" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
+            <element signature="e#2101#2102#0" expanded="true" />
+            <element signature="e#2126#2127#0" expanded="true" />
+            <element signature="e#2160#2161#0" expanded="true" />
+            <element signature="e#2188#2189#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        <state relative-caret-position="30">
+          <caret line="61" column="2" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/carolynn/beadinventory/InventoryStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

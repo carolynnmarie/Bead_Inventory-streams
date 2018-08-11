@@ -1,5 +1,6 @@
 package io.carolynn.beadinventory;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.carolynn.beadinventory.Beads.Bead;
 import io.carolynn.beadinventory.Beads.Material;
 import io.carolynn.beadinventory.Beads.Quality;
@@ -8,7 +9,7 @@ import io.carolynn.beadinventory.Beads.Shape;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class InventoryManager {
+public class CreateBeads {
 
     ArrayList<Bead> inventory;
     Material[] materials;
@@ -16,7 +17,8 @@ public class InventoryManager {
     Quality[] quality;
     Scanner input;
 
-    public InventoryManager(ArrayList<Bead> inventory){
+
+    public CreateBeads(ArrayList<Bead> inventory){
         this.inventory = inventory;
         this.materials = Material.values();
         this.shapes = Shape.values();
@@ -24,7 +26,7 @@ public class InventoryManager {
         this.input = new Scanner(System.in);
     }
 
-    public InventoryManager(){
+    public CreateBeads(){
         this.inventory = new ArrayList<>();
         this.materials = Material.values();
         this.shapes = Shape.values();
@@ -44,22 +46,17 @@ public class InventoryManager {
     public String printQuality(){
         return Arrays.stream(quality).map(Quality::getQuality).collect(Collectors.joining("\n"));
     }
-    public void addBead(){
+    public Bead addBead(){
         Material material = getMaterial();
         String color = getColor();
         int size = getSize();
         Shape shape = getShape();
-        String otherShape = "";
-        if(shape.getShape().equals("other")){
-            System.out.println("enter description of bead's shape");
-            otherShape = input.nextLine();
-        }
         String description = getDescription();
         Quality quality = getQuality();
         int quantity = getQuantity();
-        int id = (int)inventory.get(inventory.size()-1).getId() +1;
-        Bead bead = new Bead(material,color,size,shape,otherShape,description,quality,quantity,id);
-        inventory.add(bead);
+        String id = "M" + material.getId() + "Sh" + shape.getId() + "Si" + size + "C" + color;
+        Bead bead = new Bead(material,color,size,shape,description,quality,quantity,id);
+        return bead;
     }
 
     public Material getMaterial(){
@@ -122,15 +119,6 @@ public class InventoryManager {
         return x;
     }
 
-    public void changeQuantity(int id){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter new quantity");
-        int quantity = scanner.nextInt();
-        for(Bead bead: inventory){
-            if(bead.getId() == id){
-                bead.setQuantity(quantity);
-            }
-        }
-    }
+
 
 }

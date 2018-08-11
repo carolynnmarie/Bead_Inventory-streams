@@ -6,7 +6,7 @@ public class TestManageInventory {
 
     @Test
     public void testPrintMaterials(){
-        InventoryManager management = new InventoryManager();
+        CreateBeads management = new CreateBeads();
         System.out.println(management.printMaterials());
     }
 }

@@ -1,26 +1,27 @@
 package io.carolynn.beadinventory.Beads;
 
-public class Bead {
+import java.io.Serializable;
+
+public class Bead implements Serializable {
 
     Material material;
     String color;
     int sizeCM;
     Shape shape;
-    String shapeOther;
     String description;
     Quality quality;
     int quantity;
-    long id;
+    String id;
 
     public Bead(){ }
 
-    public Bead(Material material, String color, int sizeCM, Shape shape, String shapeOther, String description,
-                Quality quality, int quantity, int id){
+    public Bead(Material material, String color, int sizeCM, Shape shape,String description,
+                Quality quality, int quantity, String id){
         this.material = material;
         this.color = color;
         this.sizeCM = sizeCM;
         this.shape = shape;
-        this.shapeOther = shapeOther;
+
         this.description = description;
         this.quality = quality;
         this.quantity = quantity;
@@ -62,14 +63,6 @@ public class Bead {
         this.shape = shape;
     }
 
-    public String getShapeOther() {
-        return shapeOther;
-    }
-
-    public void setShapeOther(String shapeOther) {
-        this.shapeOther = shapeOther;
-    }
-
     public String getDescription() {
         return description;
     }
@@ -94,18 +87,18 @@ public class Bead {
         this.quantity = quantity;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
     @Override
     public String toString() {
         return "Id: " + id + ", Material: " + material.getMaterial() + ", Color: " + color + ", Size: " + sizeCM +
-                ", Shape: " + shape.getShape() + ", Description: " + shapeOther + description + ", Quality: "
+                ", Shape: " + shape.getShape() + ", Description: " + description + ", Quality: "
                 + quality.getQuality() + ", Quantity: " + quantity;
     }
 }
