@@ -54,7 +54,7 @@ public class CreateBeads {
         String description = getDescription();
         Quality quality = getQuality();
         int quantity = getQuantity();
-        String id = "M" + material.getId() + "Sh" + shape.getId() + "Si" + size + "C" + color;
+        String id = "M" + material.getId() + ",Sh" + shape.getId() + ",Si" + size + ",C" + color;
         Bead bead = new Bead(material,color,size,shape,description,quality,quantity,id);
         return bead;
     }
