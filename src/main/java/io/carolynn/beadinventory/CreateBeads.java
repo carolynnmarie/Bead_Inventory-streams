@@ -1,10 +1,7 @@
 package io.carolynn.beadinventory;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.carolynn.beadinventory.Beads.Bead;
-import io.carolynn.beadinventory.Beads.Material;
-import io.carolynn.beadinventory.Beads.Quality;
-import io.carolynn.beadinventory.Beads.Shape;
+import io.carolynn.beadinventory.Beads.*;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -12,56 +9,41 @@ import java.util.stream.Collectors;
 public class CreateBeads {
 
     ArrayList<Bead> inventory;
-    Material[] materials;
-    Shape[] shapes;
-    Quality[] quality;
+
+
+
     Scanner input;
 
 
     public CreateBeads(ArrayList<Bead> inventory){
         this.inventory = inventory;
-        this.materials = Material.values();
-        this.shapes = Shape.values();
-        this.quality = Quality.values();
         this.input = new Scanner(System.in);
     }
 
     public CreateBeads(){
         this.inventory = new ArrayList<>();
-        this.materials = Material.values();
-        this.shapes = Shape.values();
-        this.quality = Quality.values();
         this.input = new Scanner(System.in);
     }
 
 
-    public String printMaterials(){
-        return Arrays.stream(materials).map(Material::getMaterial).collect(Collectors.joining("\n "));
-    }
-
-    public String printShapes(){
-        return Arrays.stream(shapes).map(Shape::getShape).collect(Collectors.joining("\n"));
-    }
-
-    public String printQuality(){
-        return Arrays.stream(quality).map(Quality::getQuality).collect(Collectors.joining("\n"));
-    }
-    public Bead addBead(){
+    public Bead beadFromUserInput(){
         Material material = getMaterial();
-        String color = getColor();
+        ColorFamily colorFamily = getColorFamily();
+        String colorShade = getColor();
         int size = getSize();
         Shape shape = getShape();
         String description = getDescription();
         Quality quality = getQuality();
         int quantity = getQuantity();
-        String id = "M" + material.getId() + ",Sh" + shape.getId() + ",Si" + size + ",C" + color;
-        Bead bead = new Bead(material,color,size,shape,description,quality,quantity,id);
+        Bead bead = new Bead(material,colorFamily,colorShade,size,shape,description,quality,quantity);
         return bead;
     }
 
     public Material getMaterial(){
+        Material[] materials= Material.values();
+        String x =Arrays.stream(materials).map(Material::getMaterial).collect(Collectors.joining("\n"));
         Material material = null;
-        System.out.println("Enter material from list of choices:\n" + printMaterials());
+        System.out.println("Enter material from list of choices:\n" + x);
         String in = input.nextLine().toLowerCase();
         for(Material item: materials){
             if(item.getMaterial().equals(in)){
@@ -69,6 +51,20 @@ public class CreateBeads {
             }
         }
         return material;
+    }
+
+    public ColorFamily getColorFamily(){
+        ColorFamily[] colorFamily = ColorFamily.values();
+        String x = Arrays.stream(colorFamily).map(ColorFamily::getColor).collect(Collectors.joining(", "));
+        ColorFamily cFamily = null;
+        System.out.println("Enter color family from list: " + x);
+        String in = input.nextLine().toLowerCase();
+        for(ColorFamily c: colorFamily){
+            if(c.getColor().equals(in)){
+                cFamily = c;
+            }
+        }
+        return cFamily;
     }
 
     private String getColor(){
@@ -84,8 +80,10 @@ public class CreateBeads {
     }
 
     private Shape getShape(){
+        Shape[] shapes = Shape.values();
+        String x = Arrays.stream(shapes).map(Shape::getShape).collect(Collectors.joining("\n"));
         Shape shape = null;
-        System.out.println("Enter shape from list of choices:\n" + printShapes());
+        System.out.println("Enter shape from list of choices:\n" + x);
         String shape1 = input.nextLine().toLowerCase();
         for(Shape item : shapes){
             if(item.getShape().equals(shape1)){
@@ -101,8 +99,10 @@ public class CreateBeads {
     }
 
     private Quality getQuality(){
+        Quality[] quality = Quality.values();
+        String x = Arrays.stream(quality).map(Quality::getQuality).collect(Collectors.joining("\n"));
         Quality quality1 = null;
-        System.out.println("Enter quality from list:\n" + printQuality());
+        System.out.println("Enter quality from list:\n" + x);
         String in = input.nextLine().toLowerCase();
         for(Quality q: quality){
             if(q.getQuality().equals(in)){

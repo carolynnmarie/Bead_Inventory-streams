@@ -1,9 +1,6 @@
 package io.carolynn.beadinventory;
 
-import io.carolynn.beadinventory.Beads.Bead;
-import io.carolynn.beadinventory.Beads.Material;
-import io.carolynn.beadinventory.Beads.Quality;
-import io.carolynn.beadinventory.Beads.Shape;
+import io.carolynn.beadinventory.Beads.*;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -30,7 +27,7 @@ public class InventoryStorage {
     }
 
     public void serializeBeadObject(){
-        Bead bead = manager.addBead();
+        Bead bead = manager.beadFromUserInput();
         try(ObjectOutputStream out = new ObjectOutputStream(
                 new FileOutputStream(filePath.toFile()))) {
             out.writeObject(bead);
@@ -80,19 +77,21 @@ public class InventoryStorage {
     public static void main(String[] args){
 
         InventoryStorage storage = new InventoryStorage(Paths.get("/Users/carolynn/dev/BeadInventoryOne.ser"));
-        Bead bead = new Bead(Material.ADVENTURINE,"dark green",6,Shape.ROUND," ",Quality.GOOD,17,
-                "M14,Sh101,Si6,Cdark green");
-        Bead bead2 = new Bead(Material.ADVENTURINE,"light green",8,Shape.ROUND," ",Quality.GOOD,17,
-                "M14,Sh101,Si8,Clg");
-        Bead bead3 = new Bead(Material.BLUE_ADVENTURINE,"light",8,Shape.ROUND," ",Quality.GOOD,20,
-                "M15,Sh101,Si8,Clb");
+        Bead bead = new Bead(Material.ADVENTURINE,ColorFamily.GREEN,"dark",6,Shape.ROUND," ",
+                Quality.GOOD,10);
+        Bead bead2 = new Bead(Material.ADVENTURINE,ColorFamily.GREEN,"light",8,Shape.ROUND," ",
+                Quality.GOOD,20);
+        Bead bead3 = new Bead(Material.BLUE_ADVENTURINE,ColorFamily.BLUE,"light",8,Shape.ROUND," ",
+                Quality.GOOD,30);
         ArrayList<Bead> beads = new ArrayList<>(Arrays.asList(bead, bead2));
+
         storage.serializeBeadObject(beads);
         storage.addBeadObject(bead3);
         ArrayList<Bead> beads1 = storage.deSerializeBeadObjects();
-        for(Bead b: beads1){
-            System.out.println(b.toString());
-        }
 
+        InventoryTracker tracker = new InventoryTracker(beads1);
+        System.out.println(tracker.countCurrentMaterials());
+        System.out.println(tracker.countTotalBeads());
+        System.out.println(tracker.getCurrentColorsOfMaterial(Material.ADVENTURINE));
     }
 }

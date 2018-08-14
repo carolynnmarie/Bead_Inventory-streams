@@ -5,27 +5,28 @@ import java.io.Serializable;
 public class Bead implements Serializable {
 
     Material material;
-    String color;
+    ColorFamily colorFamily;
+    String colorShade;
     int sizeCM;
     Shape shape;
     String description;
     Quality quality;
     int quantity;
-    String id;
+
 
     public Bead(){ }
 
-    public Bead(Material material, String color, int sizeCM, Shape shape,String description,
-                Quality quality, int quantity, String id){
+    public Bead(Material material, ColorFamily colorFamily, String colorShade, int sizeCM, Shape shape, String description,
+                Quality quality, int quantity){
         this.material = material;
-        this.color = color;
+        this.colorFamily = colorFamily;
+        this.colorShade = colorShade;
         this.sizeCM = sizeCM;
         this.shape = shape;
-
         this.description = description;
         this.quality = quality;
         this.quantity = quantity;
-        this.id = id;
+
     }
 
     public String getMaterial() {
@@ -39,12 +40,12 @@ public class Bead implements Serializable {
         this.material = material;
     }
 
-    public String getColor() {
-        return color;
+    public String getColorShade() {
+        return colorShade;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setColorShade(String colorShade) {
+        this.colorShade = colorShade;
     }
 
     public int getSizeCM() {
@@ -87,17 +88,18 @@ public class Bead implements Serializable {
         this.quantity = quantity;
     }
 
-    public String getId() {
-        return id;
+
+    public ColorFamily getColorFamily() {
+        return colorFamily;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setColorFamily(ColorFamily colorFamily) {
+        this.colorFamily = colorFamily;
     }
 
     @Override
     public String toString() {
-        return "Id: " + id + ", Material: " + material.getMaterial() + ", Color: " + color + ", Size: " + sizeCM +
+        return "Material: " + material.getMaterial() + ", Color: " + colorShade + ", Size: " + sizeCM +
                 ", Shape: " + shape.getShape() + ", Description: " + description + ", Quality: "
                 + quality.getQuality() + ", Quantity: " + quantity;
     }
