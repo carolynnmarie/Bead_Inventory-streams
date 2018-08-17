@@ -3,6 +3,7 @@ package io.carolynn.beadinventory;
 
 
 import io.carolynn.beadinventory.Beads.*;
+import io.carolynn.beadinventory.Inventory.InventoryTracker;
 import org.junit.Assert;
 import org.junit.Test;
 

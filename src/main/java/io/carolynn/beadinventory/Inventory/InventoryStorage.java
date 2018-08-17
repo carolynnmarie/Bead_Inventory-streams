@@ -1,6 +1,7 @@
-package io.carolynn.beadinventory;
+package io.carolynn.beadinventory.Inventory;
 
 import io.carolynn.beadinventory.Beads.*;
+import io.carolynn.beadinventory.CreateBeads;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -8,6 +9,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import static io.carolynn.beadinventory.Beads.ColorFamily.*;
+import static io.carolynn.beadinventory.Beads.Material.*;
+import static io.carolynn.beadinventory.Beads.Shape.*;
+import static io.carolynn.beadinventory.Beads.Quality.*;
 
 public class InventoryStorage {
 
@@ -51,13 +57,10 @@ public class InventoryStorage {
 
     public ArrayList<Bead> deSerializeBeadObjects(){
         ArrayList<Bead> beadList = new ArrayList<>();
-//        Bead bead = null;
+
         try(ObjectInputStream in = new ObjectInputStream(
                 new FileInputStream(filePath.toFile()))) {
-//
                 beadList = (ArrayList<Bead>) in.readObject();
-//                beadList.add(bead);
-//
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -74,24 +77,34 @@ public class InventoryStorage {
         serializeBeadObject(beads);
     }
 
+    public void deleteBeadObject(Bead bead){
+        ArrayList<Bead> beads = deSerializeBeadObjects();
+        Bead temp = null;
+        int index = 0;
+        for(int i = 0; i<beads.size(); i++){
+            if(beads.get(i).getId().equals(bead.getId())){
+                temp = beads.get(i);
+                index = i;
+            }
+        }
+        if(temp != null){
+            beads.remove(index);
+        }
+        serializeBeadObject(beads);
+    }
+
     public static void main(String[] args){
 
         InventoryStorage storage = new InventoryStorage(Paths.get("/Users/carolynn/dev/BeadInventoryOne.ser"));
-        Bead bead = new Bead(Material.ADVENTURINE,ColorFamily.GREEN,"dark",6,Shape.ROUND," ",
-                Quality.GOOD,10);
-        Bead bead2 = new Bead(Material.ADVENTURINE,ColorFamily.GREEN,"light",8,Shape.ROUND," ",
-                Quality.GOOD,20);
-        Bead bead3 = new Bead(Material.BLUE_ADVENTURINE,ColorFamily.BLUE,"light",8,Shape.ROUND," ",
-                Quality.GOOD,30);
-        ArrayList<Bead> beads = new ArrayList<>(Arrays.asList(bead, bead2));
+        InventoryList inventory = new InventoryList();
+        ArrayList<Bead> beads = inventory.getInventory();
 
         storage.serializeBeadObject(beads);
-        storage.addBeadObject(bead3);
+
         ArrayList<Bead> beads1 = storage.deSerializeBeadObjects();
 
         InventoryTracker tracker = new InventoryTracker(beads1);
-        System.out.println(tracker.countCurrentMaterials());
-        System.out.println(tracker.countTotalBeads());
-        System.out.println(tracker.getCurrentColorsOfMaterial(Material.ADVENTURINE));
+        System.out.println(tracker.printInventory());
+
     }
 }

@@ -21,15 +21,16 @@ public enum Shape {
     FACETED_OVAL("faceted oval",117),
     FACETED_BICONE("faceted bicone",118),
     FACETED_TEARDROP("faceted teardrop",119),
-    TOP_DRILLED_FACETED_TEARDROP("top drilled faceted teardrop",120),
-    CHIP("chip",121),
-    IRREGULAR("irregular",122),
-    SEED_SMALL("small seed bead",123),
-    SEED_E("E seed bead",124),
-    SEED_E_LARGE("large E seed bead",125),
-    SEED_TUBE("tube seed bead",126),
+    T_D_FACETED_TEARDROP("top drilled faceted teardrop",120),
+    T_D_PENDANT("top drilled pendant", 121),
+    CHIP("chip",122),
+    IRREGULAR("irregular",123),
+    SEED_SMALL("small seed bead",124),
+    SEED_E("E seed bead",125),
+    SEED_E_LARGE("large E seed bead",126),
+    SEED_TUBE("tube seed bead",127),
 
-    OTHER("other",127);
+    OTHER("other",128);
 
 
     String shape;

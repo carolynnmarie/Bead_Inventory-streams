@@ -4,36 +4,37 @@ import java.io.Serializable;
 
 public class Bead implements Serializable {
 
-    Material material;
-    ColorFamily colorFamily;
-    String colorShade;
-    int sizeCM;
-    Shape shape;
-    String description;
-    Quality quality;
-    int quantity;
+    private Material material;
+    private ColorFamily colorFamily;
+    private String colorShade;
+    private int sizeMM;
+    private Shape shape;
+    private String description;
+    private Quality quality;
+    private int quantity;
+    private String id;
 
 
     public Bead(){ }
 
-    public Bead(Material material, ColorFamily colorFamily, String colorShade, int sizeCM, Shape shape, String description,
+    public Bead(Material material, ColorFamily colorFamily, String colorShade, int sizeMM, Shape shape, String description,
                 Quality quality, int quantity){
         this.material = material;
         this.colorFamily = colorFamily;
         this.colorShade = colorShade;
-        this.sizeCM = sizeCM;
+        this.sizeMM = sizeMM;
         this.shape = shape;
         this.description = description;
         this.quality = quality;
         this.quantity = quantity;
-
+        this.id = material.getId() + colorFamily.getId() + colorShade + sizeMM + shape.getId();
     }
 
-    public String getMaterial() {
-        return material.getMaterial();
+    public Material getMaterial() {
+        return material;
     }
-    public String getMaterialCategory(){
-        return material.getCategory().getCategory();
+    public MaterialCategories getMaterialCategory(){
+        return material.getCategory();
     }
 
     public void setMaterial(Material material) {
@@ -48,12 +49,12 @@ public class Bead implements Serializable {
         this.colorShade = colorShade;
     }
 
-    public int getSizeCM() {
-        return sizeCM;
+    public int getSizeMM() {
+        return sizeMM;
     }
 
-    public void setSizeCM(int sizeCM) {
-        this.sizeCM = sizeCM;
+    public void setSizeMM(int sizeMM) {
+        this.sizeMM = sizeMM;
     }
 
     public String getShape() {
@@ -97,10 +98,15 @@ public class Bead implements Serializable {
         this.colorFamily = colorFamily;
     }
 
+    public String getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
-        return "Material: " + material.getMaterial() + ", Color: " + colorShade + ", Size: " + sizeCM +
-                ", Shape: " + shape.getShape() + ", Description: " + description + ", Quality: "
-                + quality.getQuality() + ", Quantity: " + quantity;
+        return String.format("%-24s Color: %-6s %-13s Size: %-3d Shape: %-20s Quality: %-6s  Quantity: %-5d Id: %-21s, Desc: %-40s",
+                material.getMaterial(),colorFamily.getColor(),colorShade,sizeMM,shape.getShape(),quality.getQuality(),
+                quantity,id,description);
+
     }
 }
