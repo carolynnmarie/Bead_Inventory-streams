@@ -88,7 +88,7 @@ public class TestBeadInventoryStreams {
     @Test
     public void testChangeQuantyFromDescription(){
         int expected = 50;
-        inventory.changeQuantyFromDescription(ADVENTURINE,6, ColorFamily.GREEN,"dark",50);
+        inventory.changeQuantityFromDescription(ADVENTURINE,6, ColorFamily.GREEN,"dark",50);
         int actual = bead.getQuantity();
         Assert.assertEquals(expected,actual);
     }
