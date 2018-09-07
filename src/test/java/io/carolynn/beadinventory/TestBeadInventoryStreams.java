@@ -57,7 +57,7 @@ public class TestBeadInventoryStreams {
 
     @Test
     public void testGetCurrentColorsOfMaterial(){
-        String expected = "green: dark, green: light, ";
+        String expected = "GREEN: dark, GREEN: light, ";
         String actual = inventory.getCurrentColorsOfMaterial(ADVENTURINE);
         Assert.assertEquals(expected, actual);
     }

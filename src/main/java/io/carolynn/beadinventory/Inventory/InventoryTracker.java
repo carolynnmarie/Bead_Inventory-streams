@@ -31,17 +31,6 @@ public class InventoryTracker {
                 .reduce(0,Integer::sum);
     }
 
-    public String printInventory(){
-        StringBuilder builder = new StringBuilder();
-        Collections.sort(beads,Comparator.comparing(Bead::getMaterial));
-        for(Bead bead: beads){
-            builder.append(bead.toString())
-                    .append("\n");
-        }
-        return builder.toString();
-    }
-
-
     public List<String> getCurrentShapeList(){
         return beads.stream()
                 .map(e -> e.getShape()).distinct()
@@ -56,12 +45,8 @@ public class InventoryTracker {
     }
 
     public String printCurrentMaterials(){
-        List<String> list = getCurrentMaterialList();
         StringBuilder builder = new StringBuilder();
-        for(String item: list){
-            builder.append(item)
-                    .append("\n");
-        }
+        getCurrentMaterialList().stream().forEach(e->builder.append(e).append("\n"));
         return builder.toString();
     }
 
@@ -73,32 +58,27 @@ public class InventoryTracker {
     }
 
     public String getCurrentColorsOfMaterial(Material material) {
-        Collections.sort(beads, Comparator.comparing(Bead::getMaterial).thenComparing(Bead::getColorShade));
         StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < beads.size(); i++) {
-            if(beads.get(i).getMaterial().equals(material)) {
-                builder.append(beads.get(i).getColorFamily())
-                        .append(": ")
-                        .append(beads.get(i).getColorShade())
-                        .append(", ");
-            }
-        }
+        Collections.sort(beads, Comparator.comparing(Bead::getMaterial).thenComparing(Bead::getColorShade));
+        beads.stream()
+                .filter(e->e.getMaterial().equals(material))
+                .forEach(bead -> builder.append(bead.getColorFamily().getColor())
+                                        .append(": ")
+                                        .append(bead.getColorShade())
+                                        .append(", "));
         return builder.toString();
     }
 
     public String getCurrentColorsOfMaterialSize(Material material, int size){
         Collections.sort(beads, Comparator.comparing(Bead::getMaterial).thenComparing(Bead::getColorShade));
         StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < beads.size(); i++) {
-            if(beads.get(i).getMaterial().equals(material)) {
-                if(beads.get(i).getSizeMM() == size) {
-                    builder.append(beads.get(i).getColorFamily().getColor())
-                            .append(": ")
-                            .append(beads.get(i).getColorShade())
-                            .append(", ");
-                }
-            }
-        }
+        beads.stream()
+                .filter(e-> e.getMaterial().equals(material))
+                .filter(e->e.getSizeMM() == size)
+                .forEach(bead -> builder.append(bead.getColorFamily().getColor())
+                                        .append(": ")
+                                        .append(bead.getColorShade())
+                                        .append(", "));
         return builder.toString();
     }
 
@@ -123,14 +103,8 @@ public class InventoryTracker {
     }
 
     public String lowQuantityList(){
-        List<Bead> list = checkForLowQuantityNaturalStone();
-        StringBuilder builder = new StringBuilder();
-        for(int i = 0; i<list.size(); i++){
-            builder.append(i+1)
-                    .append(".) ")
-                    .append(list.get(i).toString())
-                    .append("\n");
-        }
+        StringBuilder builder = new StringBuilder("Low Quantity:\n");
+        checkForLowQuantityNaturalStone().stream().forEach(bead -> builder.append(bead.toString()).append("\n"));
         return builder.toString();
     }
 

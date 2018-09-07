@@ -10,8 +10,6 @@ public class CreateBeads {
 
     ArrayList<Bead> inventory;
 
-
-
     Scanner input;
 
 
