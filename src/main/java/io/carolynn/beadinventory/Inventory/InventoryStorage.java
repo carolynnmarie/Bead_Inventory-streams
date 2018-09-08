@@ -1,7 +1,7 @@
 package io.carolynn.beadinventory.Inventory;
 
 import io.carolynn.beadinventory.Beads.*;
-import io.carolynn.beadinventory.CreateBeads;
+import io.carolynn.beadinventory.Beads.CreateBeads;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -15,10 +15,8 @@ import java.util.Comparator;
 public class InventoryStorage {
 
     private Path filePath;
-    private CreateBeads manager;
 
     public InventoryStorage(Path filePath){
-        this.manager = new CreateBeads();
         this.filePath = filePath;
         try{
             if(Files.notExists(filePath)){
@@ -29,16 +27,12 @@ public class InventoryStorage {
         }
     }
 
-    public void serializeBeadObject(){
-        Bead bead = manager.beadFromUserInput();
-        try(ObjectOutputStream out = new ObjectOutputStream(
-                new FileOutputStream(filePath.toFile()))) {
-            out.writeObject(bead);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void addBeadFromUserInput(){
+        CreateBeads beadMaker = new CreateBeads();
+        Bead bead = beadMaker.beadFromUserInput();
+        ArrayList<Bead> beads = deSerializeBeadObjects();
+        beads.add(bead);
+        serializeBeadObjectArray(beads);
     }
 
     public void serializeBeadObjectArray(ArrayList<Bead> bead){
@@ -54,7 +48,6 @@ public class InventoryStorage {
 
     public ArrayList<Bead> deSerializeBeadObjects(){
         ArrayList<Bead> beadList = new ArrayList<>();
-
         try(ObjectInputStream in = new ObjectInputStream(
                 new FileInputStream(filePath.toFile()))) {
                 beadList = (ArrayList<Bead>) in.readObject();
@@ -87,18 +80,21 @@ public class InventoryStorage {
     }
 
     public String viewInventory(){
-        String print = "";
+        StringBuilder print = new StringBuilder();
         ArrayList<Bead> beads = deSerializeBeadObjects();
-        Collections.sort(beads,Comparator.comparing(Bead::getMaterial).thenComparing(Bead::getShape).thenComparing(Bead::getSizeMM));
-        for (Bead bead : beads) {
-            print += bead.toString() + "\n";
-        }
-        return print;
+        Collections.sort(beads,
+                Comparator.comparing(Bead::getMaterial)
+                .thenComparing(Bead::getShape)
+                .thenComparing(Bead::getSizeMM));
+        beads.stream().forEach(bead -> print.append(bead.toString()).append("\n"));
+        return print.toString();
     }
+
 
     public static void main(String[] args){
 
         InventoryStorage storage = new InventoryStorage(Paths.get("/Users/carolynn/dev/BeadInventoryOne.ser"));
+
         System.out.println(storage.viewInventory());
     }
 }

@@ -1,5 +1,9 @@
 package io.carolynn.beadinventory.Beads;
 
+import io.carolynn.beadinventory.Material;
+import io.carolynn.beadinventory.MaterialCategories;
+import io.carolynn.beadinventory.Quality;
+
 import java.io.Serializable;
 
 public class Bead implements Serializable {
@@ -32,6 +36,10 @@ public class Bead implements Serializable {
 
     public Material getMaterial() {
         return material;
+    }
+
+    public String getMaterialString(){
+        return material.getMaterial();
     }
     public MaterialCategories getMaterialCategory(){
         return material.getCategory();
@@ -104,8 +112,8 @@ public class Bead implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("%-24s Color: %-6s %-13s Size: %-3d Shape: %-20s Quality: %-6s  Quantity: %-5d Id: %-21s, Desc: %-40s",
-                material.getMaterial(),colorFamily.getColor(),colorShade,sizeMM,shape.getShape(),quality.getQuality(),
+        return String.format("Material: %-15s, %-24s Color: %-6s %-13s Size: %-3d Shape: %-20s Quality: %-6s  Quantity: %-5d Id: %-21s, Desc: %-40s",
+                material.getCategory().getCategory(),material.getMaterial(),colorFamily.getColor(),colorShade,sizeMM,shape.getShape(),quality.getQuality(),
                 quantity,id,description);
 
     }

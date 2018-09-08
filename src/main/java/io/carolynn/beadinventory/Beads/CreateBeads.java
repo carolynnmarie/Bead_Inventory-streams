@@ -1,25 +1,18 @@
-package io.carolynn.beadinventory;
+package io.carolynn.beadinventory.Beads;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.carolynn.beadinventory.Beads.*;
+import io.carolynn.beadinventory.Material;
+import io.carolynn.beadinventory.Quality;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class CreateBeads {
 
-    ArrayList<Bead> inventory;
-
     Scanner input;
 
 
-    public CreateBeads(ArrayList<Bead> inventory){
-        this.inventory = inventory;
-        this.input = new Scanner(System.in);
-    }
-
     public CreateBeads(){
-        this.inventory = new ArrayList<>();
         this.input = new Scanner(System.in);
     }
 
@@ -33,8 +26,7 @@ public class CreateBeads {
         String description = getDescription();
         Quality quality = getQuality();
         int quantity = getQuantity();
-        Bead bead = new Bead(material,colorFamily,colorShade,size,shape,description,quality,quantity);
-        return bead;
+        return new Bead(material, colorFamily, colorShade, size, shape, description, quality, quantity);
     }
 
     public Material getMaterial(){
@@ -71,7 +63,7 @@ public class CreateBeads {
     }
 
     private int getSize(){
-        System.out.println("enter size in centimeters. If item is seed bead, enter 0");
+        System.out.println("enter size in millimeters. If item is seed bead, enter 0");
         int size = input.nextInt();
         input.nextLine();
         return size;

@@ -1,9 +1,9 @@
-package io.carolynn.beadinventory.Beads;
+package io.carolynn.beadinventory;
 
 public enum MaterialCategories {
 
-    NATURAL_STONE("natural stone"),
-    SEMI_PRECIOUS_STONE("semi-precious stone"),
+    NATURAL_STONE("stone"),
+    SEMI_PRECIOUS_STONE("s-p stone"),
     METAL("metal"),
     PRECIOUS_METAL("precious metal"),
     GLASS("glass"),

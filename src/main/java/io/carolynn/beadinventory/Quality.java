@@ -1,4 +1,4 @@
-package io.carolynn.beadinventory.Beads;
+package io.carolynn.beadinventory;
 
 public enum Quality {
     POOR("poor"), OKAY("okay"), GOOD("good"), EXCELLENT("excellent");

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static io.carolynn.beadinventory.Beads.Material.*;
+import static io.carolynn.beadinventory.Material.*;
 
 
 public class TestBeadInventoryStreams {

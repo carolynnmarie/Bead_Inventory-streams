@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import static io.carolynn.beadinventory.Beads.ColorFamily.*;
-import static io.carolynn.beadinventory.Beads.Material.*;
-import static io.carolynn.beadinventory.Beads.Quality.GOOD;
+import static io.carolynn.beadinventory.Material.*;
+import static io.carolynn.beadinventory.Quality.GOOD;
 import static io.carolynn.beadinventory.Beads.Shape.ROUND;
 
 public class InventoryList {

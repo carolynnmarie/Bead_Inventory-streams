@@ -1,11 +1,12 @@
 package io.carolynn.beadinventory.Inventory;
 
 import io.carolynn.beadinventory.Beads.*;
+import io.carolynn.beadinventory.Material;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static io.carolynn.beadinventory.Beads.MaterialCategories.*;
+import static io.carolynn.beadinventory.MaterialCategories.*;
 
 public class InventoryTracker {
 
@@ -13,7 +14,10 @@ public class InventoryTracker {
 
     public InventoryTracker(ArrayList<Bead> beads1){
         this.beads = beads1;
-        Collections.sort(beads, Comparator.comparing(Bead::getMaterial).thenComparing(Bead::getColorShade));
+        Collections.sort(beads, Comparator.comparing(Bead::getMaterial)
+                .thenComparing(Bead::getShape)
+                .thenComparing(Bead::getSizeMM)
+                .thenComparing(Bead::getColorFamily));
     }
 
     public ArrayList<Bead> getBeads(){

@@ -1,6 +1,8 @@
-package io.carolynn.beadinventory.Beads;
+package io.carolynn.beadinventory;
 
-import static io.carolynn.beadinventory.Beads.MaterialCategories.*;
+import io.carolynn.beadinventory.MaterialCategories;
+
+import static io.carolynn.beadinventory.MaterialCategories.*;
 
 public enum Material {
 
@@ -31,24 +33,23 @@ public enum Material {
     DULL_SILVER_PLATED("dull silver plated", METAL,23),
     BRIGHT_SILVER_PLATED("bright silver plated", METAL,24),
     GOLD_TONED_PLATED("gold toned plated", METAL,25),
+
     STERLING_SILVER_PLATED("925 sterling silver plated", PRECIOUS_METAL,26),
-    FULL_STERLING_SILVER("925 sterling silver plated", PRECIOUS_METAL,27),
+    FULL_STERLING_SILVER("full 925 sterling silver", PRECIOUS_METAL,27),
     GOLD("gold", PRECIOUS_METAL,28),
     GOLD_PLATED("gold plated", PRECIOUS_METAL,29),
-    STAINLESS_STEEL("stainless steel", METAL,30),
+    STAINLESS_STEEL("stainless steel", PRECIOUS_METAL,30),
 
     GLASS("glass", MaterialCategories.GLASS,31),
     CRYSTAL("crystal", MaterialCategories.GLASS,32),
     SWAROVSKI_CRYSTAL("swarovski crystal", MaterialCategories.GLASS,33),
     GLASS_PEARL("glass pearl", MaterialCategories.GLASS,34),
 
-
     PAPER("paper", OTHER,35),
     CERAMIC("ceramic", OTHER,36),
     ACRYLIC("acrylic", OTHER,37),
     WOOD("wood", OTHER,38),
     PLASTIC("plastic", OTHER,39);
-
 
 
     String material;
