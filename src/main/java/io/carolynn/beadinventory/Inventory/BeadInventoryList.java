@@ -10,11 +10,11 @@ import static io.carolynn.beadinventory.Material.*;
 import static io.carolynn.beadinventory.Quality.GOOD;
 import static io.carolynn.beadinventory.Beads.Shape.ROUND;
 
-public class InventoryList {
+public class BeadInventoryList {
 
     private ArrayList<Bead> inventory;
 
-    public InventoryList() {
+    public BeadInventoryList() {
         Bead adXSm =new Bead(ADVENTURINE,GREEN,"light",4,ROUND," ", GOOD,34);
         Bead adSm = new Bead(ADVENTURINE,GREEN,"light",6,ROUND," ", GOOD,78);
         Bead adMedDark = new Bead(ADVENTURINE,GREEN,"dark",8,ROUND," ", GOOD,25);
@@ -38,7 +38,7 @@ public class InventoryList {
                 bAdSm,bAdXSm, jasperLg,jasperMed,jasperSm,jasperXSm,amLg));
     }
 
-    public InventoryList(ArrayList<Bead> inventory) {
+    public BeadInventoryList(ArrayList<Bead> inventory) {
         this.inventory = inventory;
     }
 

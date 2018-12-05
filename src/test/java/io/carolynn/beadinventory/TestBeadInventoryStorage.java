@@ -1,11 +1,11 @@
 package io.carolynn.beadinventory;
 
 
-
 import io.carolynn.beadinventory.Beads.*;
-import io.carolynn.beadinventory.Inventory.InventoryTracker;
-import org.junit.Assert;
-import org.junit.Test;
+import io.carolynn.beadinventory.Inventory.BeadInventoryStorage;
+import io.carolynn.beadinventory.Inventory.TrackBeadInventory;
+import java.nio.file.Paths;
+import org.junit.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ import java.util.List;
 import static io.carolynn.beadinventory.Material.*;
 
 
-public class TestBeadInventoryStreams {
+public class TestBeadInventoryStorage {
 
     Bead bead = new Bead(Material.ADVENTURINE,ColorFamily.GREEN,"dark",6,Shape.ROUND,
             " ",Quality.GOOD,17);
@@ -24,26 +24,35 @@ public class TestBeadInventoryStreams {
             " ",Quality.GOOD,20);
 
     private ArrayList<Bead> beads = new ArrayList<>(Arrays.asList(bead, bead2, bead3));
-    private InventoryTracker inventory = new InventoryTracker(beads);
+    private TrackBeadInventory inventory = new TrackBeadInventory(Paths.get("/Users/carolynn/dev/BeadInventoryTesty.ser"));
+
+    @Before
+    public void setup(){
+        inventory.getInventory().setBeads(beads);
+    }
 
     @Test
     public void testGetTotalBeadCount(){
         long expected = 54;
-        long actual = inventory.countTotalBeads();
+        long actual = inventory.getBeadCount();
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetCurrentMaterialCount(){
-        long expected = 3;
-        long actual = inventory.countCurrentMaterials();
+        long expected = 2;
+        long actual = inventory.getCurrentMaterialCount();
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetCurrentMaterialList(){
-        List<String> expected = new ArrayList<>(Arrays.asList("adventurine, blue adventurine"));
-        List<String> actual = inventory.getCurrentMaterialList();
+//        List<String> expected = new ArrayList<>(Arrays.asList("adventurine, blue adventurine"));
+        String expected = "adventurine, blue adventurine, ";
+        List<String> actual1 = inventory.getCurrentMaterialList();
+        StringBuilder builder = new StringBuilder();
+        actual1.stream().forEach(e->builder.append(e).append(", "));
+        String actual = builder.toString();
         Assert.assertEquals(expected, actual);
     }
 
@@ -57,7 +66,7 @@ public class TestBeadInventoryStreams {
 
     @Test
     public void testGetCurrentColorsOfMaterial(){
-        String expected = "GREEN: dark, GREEN: light, ";
+        String expected = "green: dark, green: light, ";
         String actual = inventory.getCurrentColorsOfMaterial(ADVENTURINE);
         Assert.assertEquals(expected, actual);
     }
@@ -73,23 +82,7 @@ public class TestBeadInventoryStreams {
     @Test
     public void testCountOfMaterialSizeColor(){
         long expected = 17;
-        long actual = inventory.countOfMaterialSizeColor(ADVENTURINE,8,ColorFamily.GREEN,"light");
-        Assert.assertEquals(expected,actual);
-    }
-
-    @Test
-    public void testChangeQuantity(){
-        int expected = 50;
-        inventory.changeQuantity(bead,50);
-        int actual = bead.getQuantity();
-        Assert.assertEquals(expected,actual);
-    }
-
-    @Test
-    public void testChangeQuantyFromDescription(){
-        int expected = 50;
-        inventory.changeQuantityFromDescription(ADVENTURINE,6, ColorFamily.GREEN,"dark",50);
-        int actual = bead.getQuantity();
+        long actual = inventory.countMaterialSizeColor(ADVENTURINE,8,ColorFamily.GREEN,"light");
         Assert.assertEquals(expected,actual);
     }
 

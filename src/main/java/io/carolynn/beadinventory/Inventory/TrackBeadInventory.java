@@ -2,30 +2,28 @@ package io.carolynn.beadinventory.Inventory;
 
 import io.carolynn.beadinventory.Beads.*;
 import io.carolynn.beadinventory.Material;
-
+import static io.carolynn.beadinventory.MaterialCategories.*;
+import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static io.carolynn.beadinventory.MaterialCategories.*;
+public class TrackBeadInventory {
 
-public class InventoryTracker {
 
+    private BeadInventoryStorage inventory;
     private ArrayList<Bead> beads;
 
-    public InventoryTracker(ArrayList<Bead> beads1){
-        this.beads = beads1;
-        Collections.sort(beads, Comparator.comparing(Bead::getMaterial)
-                .thenComparing(Bead::getShape)
-                .thenComparing(Bead::getSizeMM)
-                .thenComparing(Bead::getColorFamily));
+    public TrackBeadInventory(Path filePath){
+        this.inventory = new BeadInventoryStorage(filePath);
+        this.beads = inventory.getBeads();
     }
 
-    public ArrayList<Bead> getBeads(){
-        return this.beads;
+    public BeadInventoryStorage getInventory(){
+        return inventory;
     }
 
 
-    public long countTotalBeads(){
+    public long getBeadCount(){
         return beads.stream()
                 .map(e->e.getQuantity())
                 .reduce(0,Integer::sum);
@@ -37,6 +35,7 @@ public class InventoryTracker {
                 .collect(Collectors.toList());
     }
 
+
     public List<String> getCurrentMaterialList(){
         return beads.stream()
                 .map(e->e.getMaterial().getMaterial())
@@ -44,13 +43,8 @@ public class InventoryTracker {
                 .collect(Collectors.toList());
     }
 
-    public String printCurrentMaterials(){
-        StringBuilder builder = new StringBuilder();
-        getCurrentMaterialList().stream().forEach(e->builder.append(e).append("\n"));
-        return builder.toString();
-    }
 
-    public long countCurrentMaterials(){
+    public long getCurrentMaterialCount(){
         return beads.stream()
                 .map(e -> e.getMaterial())
                 .distinct()
@@ -62,9 +56,9 @@ public class InventoryTracker {
         beads.stream()
                 .filter(e->e.getMaterial().equals(material))
                 .forEach(bead -> builder.append(bead.getColorFamily().getColor())
-                                        .append(": ")
-                                        .append(bead.getColorShade())
-                                        .append(", "));
+                        .append(": ")
+                        .append(bead.getColorShade())
+                        .append(", "));
         return builder.toString();
     }
 
@@ -74,9 +68,9 @@ public class InventoryTracker {
                 .filter(e-> e.getMaterial().equals(material))
                 .filter(e->e.getSizeMM() == size)
                 .forEach(bead -> builder.append(bead.getColorFamily().getColor())
-                                        .append(": ")
-                                        .append(bead.getColorShade())
-                                        .append(", "));
+                        .append(": ")
+                        .append(bead.getColorShade())
+                        .append(", "));
         return builder.toString();
     }
 
@@ -90,7 +84,7 @@ public class InventoryTracker {
     }
 
 
-    public long countOfMaterialSizeColor(Material material, int size, ColorFamily cFamily, String color){
+    public long countMaterialSizeColor(Material material, int size, ColorFamily cFamily, String color){
         return beads.stream().filter(e-> e.getMaterial().equals(material))
                 .filter(e -> e.getSizeMM() == size)
                 .filter(e->e.getColorFamily().equals(cFamily))
@@ -98,14 +92,6 @@ public class InventoryTracker {
                 .map(e->e.getQuantity())
                 .findFirst()
                 .get();
-    }
-
-    public String lowQuantityList(){
-        StringBuilder builder = new StringBuilder("Low Quantity:\n");
-        checkForLowQuantity()
-                .stream()
-                .forEach(bead -> builder.append(bead.toString()).append("\n"));
-        return builder.toString();
     }
 
     private List<Bead> checkForLowQuantity(){
@@ -121,17 +107,24 @@ public class InventoryTracker {
         return low;
     }
 
-    public void changeQuantity(Bead bead, int quantity){
-        bead.setQuantity(quantity);
+    public String printLowQuantityList(){
+        StringBuilder builder = new StringBuilder("Low Quantity:\n");
+        checkForLowQuantity()
+                .stream()
+                .forEach(bead -> builder.append(bead.toString()).append("\n"));
+        return builder.toString();
     }
 
-    public void changeQuantityFromDescription(Material material, int size, ColorFamily cFamily, String color, int newQuantity){
-        Bead bead1 = beads.stream()
-                .filter(e-> e.getMaterial().equals(material.getMaterial()))
-                .filter(e -> e.getSizeMM() == size)
-                .filter(e->e.getColorFamily().equals(cFamily))
-                .filter(e->e.getColorShade().equals(color)).findFirst().get();
-        bead1.setQuantity(newQuantity);
+
+    public String printBeadsOfShape(Shape shape){
+        StringBuilder builder = new StringBuilder();
+        beads.stream().filter(e-> e.getShape().equals(shape)).forEach(e-> builder.append(e).append("\n"));
+        return builder.toString();
     }
 
+    public String printCurrentMaterials(){
+        StringBuilder builder = new StringBuilder();
+        getCurrentMaterialList().stream().forEach(e->builder.append(e).append("\n"));
+        return builder.toString();
+    }
 }
