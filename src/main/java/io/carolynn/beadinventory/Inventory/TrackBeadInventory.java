@@ -127,4 +127,16 @@ public class TrackBeadInventory {
         getCurrentMaterialList().stream().forEach(e->builder.append(e).append("\n"));
         return builder.toString();
     }
+
+    public double getTotalIndividualBeadValue(Bead bead){
+        return bead.getQuantity() * bead.getPricePoint();
+    }
+
+    public double getTotalInventoryValue(){
+        double total = 0;
+        for(Bead bead: beads){
+            total += bead.getPricePoint()*bead.getQuantity();
+        }
+        return total;
+    }
 }

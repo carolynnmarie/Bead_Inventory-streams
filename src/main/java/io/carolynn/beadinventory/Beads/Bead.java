@@ -17,12 +17,13 @@ public class Bead implements Serializable {
     private Quality quality;
     private int quantity;
     private String id;
+    private double pricePoint;
 
 
     public Bead(){ }
 
     public Bead(Material material, ColorFamily colorFamily, String colorShade, int sizeMM, Shape shape, String description,
-                Quality quality, int quantity){
+                Quality quality, int quantity, double pricePoint){
         this.material = material;
         this.colorFamily = colorFamily;
         this.colorShade = colorShade;
@@ -31,6 +32,7 @@ public class Bead implements Serializable {
         this.description = description;
         this.quality = quality;
         this.quantity = quantity;
+        this.pricePoint = pricePoint;
         this.id = material.getId() + colorFamily.getId() + colorShade + sizeMM + shape.getId();
     }
 
@@ -106,15 +108,23 @@ public class Bead implements Serializable {
         this.colorFamily = colorFamily;
     }
 
+    public double getPricePoint() {
+        return pricePoint;
+    }
+
+    public void setPricePoint(double pricePoint) {
+        this.pricePoint = pricePoint;
+    }
+
     public String getId() {
         return id;
     }
 
     @Override
     public String toString() {
-        return String.format("Material: %-15s, %-24s Color: %-6s %-13s Size: %-3d Shape: %-20s Quality: %-6s  Quantity: %-5d Id: %-21s, Desc: %-40s",
+        return String.format("Material: %-15s, %-24s Color: %-6s %-13s Size: %-3d Shape: %-20s Quality: %-6s  Quantity: %-5d Price Point: %-5f Id: %-21s, Desc: %-40s",
                 material.getCategory().getCategory(),material.getMaterial(),colorFamily.getColor(),colorShade,sizeMM,shape.getShape(),quality.getQuality(),
-                quantity,id,description);
+                quantity,pricePoint,id,description);
 
     }
 }

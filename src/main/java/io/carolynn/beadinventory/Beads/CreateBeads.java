@@ -26,7 +26,8 @@ public class CreateBeads {
         String description = getDescription();
         Quality quality = getQuality();
         int quantity = getQuantity();
-        return new Bead(material, colorFamily, colorShade, size, shape, description, quality, quantity);
+        double pricePoint = getPricePoint();
+        return new Bead(material, colorFamily, colorShade, size, shape, description, quality, quantity, pricePoint);
     }
 
     public Material getMaterial(){
@@ -107,6 +108,13 @@ public class CreateBeads {
         int x = input.nextInt();
         input.nextLine();
         return x;
+    }
+
+    private double getPricePoint(){
+        System.out.println("Enter price point");
+        double pp = input.nextDouble();
+        input.nextLine();
+        return pp;
     }
 
 

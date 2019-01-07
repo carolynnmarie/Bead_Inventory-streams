@@ -5,6 +5,7 @@ import io.carolynn.beadinventory.Beads.*;
 import io.carolynn.beadinventory.Inventory.BeadInventoryStorage;
 import io.carolynn.beadinventory.Inventory.TrackBeadInventory;
 import java.nio.file.Paths;
+import javax.persistence.Table;
 import org.junit.*;
 
 import java.util.ArrayList;
@@ -17,11 +18,11 @@ import static io.carolynn.beadinventory.Material.*;
 public class TestBeadInventoryStorage {
 
     Bead bead = new Bead(Material.ADVENTURINE,ColorFamily.GREEN,"dark",6,Shape.ROUND,
-            " ",Quality.GOOD,17);
+            " ",Quality.GOOD,17, .1);
     Bead bead2 = new Bead(Material.ADVENTURINE,ColorFamily.GREEN,"light",8,Shape.ROUND,
-            " ",Quality.GOOD,17);
+            " ",Quality.GOOD,17, .1);
     Bead bead3 = new Bead(Material.BLUE_ADVENTURINE,ColorFamily.BLUE,"light",8,Shape.ROUND,
-            " ",Quality.GOOD,20);
+            " ",Quality.GOOD,20,.1);
 
     private ArrayList<Bead> beads = new ArrayList<>(Arrays.asList(bead, bead2, bead3));
     private TrackBeadInventory inventory = new TrackBeadInventory(Paths.get("/Users/carolynn/dev/BeadInventoryTesty.ser"));
@@ -84,6 +85,13 @@ public class TestBeadInventoryStorage {
         long expected = 17;
         long actual = inventory.countMaterialSizeColor(ADVENTURINE,8,ColorFamily.GREEN,"light");
         Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void testGetTotalInvididualBeadValue(){
+        double expected = 2;
+        double actual = inventory.getTotalIndividualBeadValue(bead3);
+        Assert.assertEquals(expected,actual, .05);
     }
 
 }
